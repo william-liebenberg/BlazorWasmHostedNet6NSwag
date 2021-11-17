@@ -108,6 +108,8 @@ In `Program.cs`:
 builder.Services.AddScoped<IWeatherForecastClient, WeatherForecastClient>();
 ```
 
+Then we can inject our client to a page or component by using the `@inject` directive:
+
 ```cs
 // Inject our client interface
 @inject IWeatherForecastClient Client
@@ -120,3 +122,7 @@ builder.Services.AddScoped<IWeatherForecastClient, WeatherForecastClient>();
 	}
 }
 ```
+
+Done!
+
+Happy coding :)
