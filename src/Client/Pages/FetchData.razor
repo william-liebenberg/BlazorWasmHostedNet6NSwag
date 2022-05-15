@@ -36,8 +36,9 @@ else
         </tbody>
     </table>
 
-    <button class="btn btn-primary" onclick="@(async () => await Refresh())">Refresh</button>
 }
+
+<button class="btn btn-primary" onclick="@(async () => await Refresh())">Refresh</button>
 
 @code {
     private ICollection<WeatherForecast>? forecasts;

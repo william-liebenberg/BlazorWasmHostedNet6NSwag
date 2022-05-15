@@ -3,6 +3,12 @@ Blazor WebAssembly Hosted App with .NET 6 API and NSwag for OpenAPI Spec and C# 
 
 NOTE: Due to a current bug/issue with NSwag, we have to use the older style `Program.cs` and `Startup.cs`. For some reason the Minimal API style is generating an empty OpenAPI specification. Here is the GitHub Issue: https://github.com/RicoSuter/NSwag/issues/3727
 
+To create our app, run the following `dotnet new` command:
+
+```ps1
+dotnet new blazorwasm -n MyApp -ho -f net6.0
+```
+
 ## Add NSwag
 
 In order for NSwag to generate an Open API specification for our application and also a strongly typed C# HTTP Client, we need to add a couple of important packages.
